@@ -1,27 +1,26 @@
-# The Malaysian Cohort official website preview
+# The Malaysian Cohort website presentation preview
 
-A static, responsive preview for the proposed refresh of The Malaysian Cohort website. It follows the direction of the [Stitch project](https://stitch.withgoogle.com/projects/16938356386146210179) and links to the [current UKM website](https://www.ukm.my/mycohort/). It is **not** the live UKM website or a replacement for its participant and staff services.
+A public-facing, responsive design preview based on the supplied Stitch UI/UX files. It is intended for presentation and review, not as an official UKM deployment.
 
-## Preview
+## Pages and stack
 
-Open `index.html` in a browser. No build step, account, API key, or backend is required.
+- `index.html`: home, participant pathways, UKM resource search, and contact
+- `about.html`: cohort story and sourced milestones
+- `research.html`: biobank and research orientation
+- `styles.css` and `app.js`: responsive design, mobile navigation, and resource filtering
+- `api/resources.php`: a read-only JSON resource directory served by PHP
+- `vercel.json`: [Vercel's recommended community PHP runtime](https://vercel.com/docs/functions/runtimes)
 
-The preview contains an introduction, links for participants and researchers, a biobank and research summary, current contact details, and a path to the live UKM pages. It deliberately does not accept MyKad numbers, provide health results, simulate staff login, or display unverified staff and publication data.
+All three pages render without a build step. The resource search uses static links as a fallback when the PHP endpoint is unavailable. No participant identifiers or health information are collected.
 
-## Before any UKM deployment
+## Run and deploy
 
-1. Review [the content audit](docs/CONTENT-AUDIT.md) with TMC content owners. Replace or remove every item that lacks an approved source.
-2. Confirm the page map, bilingual copy, official logo and image rights, accessibility, and links with UKM.
-3. Confirm the WordPress transfer method and access with the UKM administrator. This repository is a static design preview, not a WordPress theme.
-4. Keep participant records, results, and staff functions on approved UKM systems. Any new workflow requires a separate security, privacy, and integration design.
-5. Record UAT results and written content approval before moving anything to the official domain.
+Open `index.html` for a quick static preview. With PHP installed, run `php -S localhost:8000` from this directory to exercise the API locally. Deploy the root directory with Vercel; the community runtime handles `api/resources.php`.
 
-## Sources
+The images under `assets/` came from the supplied Stitch package. They are labelled as illustrative concepts in the pages and require approval before official use. The supplied staff dashboard mockups are intentionally excluded from the public site.
 
-- [UKM: Introduction](https://www.ukm.my/mycohort/ms/pengenalan/)
-- [UKM: Biospecimens & Biobank](https://www.ukm.my/mycohort/ms/biospesimenbiobank/)
-- [UKM: Research & Publication](https://www.ukm.my/mycohort/ms/penyelidikan-kami/)
-- [UKM: Participant information](https://www.ukm.my/mycohort/ms/peserta-tmc/)
-- [UKM: Contact and enquiries](https://www.ukm.my/mycohort/ms/aduan/)
+## Review before official publication
 
-These pages were reviewed on 27 September 2026. UKM content may change; recheck it before release.
+The [content audit](docs/CONTENT-AUDIT.md) records claims and functions that still need TMC/UKM verification. Confirm the page map, bilingual copy, image rights, logo, content ownership, accessibility, WordPress transfer, and UKM staging access. Any participant, results, booking, or staff workflow needs separate approved service integration and privacy/security review.
+
+Reference pages: [UKM introduction](https://www.ukm.my/mycohort/ms/pengenalan/), [biobank](https://www.ukm.my/mycohort/ms/biospesimenbiobank/), [research](https://www.ukm.my/mycohort/ms/penyelidikan-kami/).
