@@ -15,6 +15,7 @@
 - A read-only PHP JSON directory at [`/api/resources.php`](https://tmc-official-website-preview.vercel.app/api/resources.php); six links are also present in HTML as a fallback.
 - Concept imagery from the supplied Stitch package, clearly labelled as illustrative. Simulated staff and participant records are excluded.
 - A proposed mapping from the current UKM navigation to preview and future pages.
+- A live-site baseline review of the existing [UKM MyCohort homepage](https://www.ukm.my/mycohort/ms/), including its news, participant, screening, gallery, contact, and staff-only areas; gaps are recorded in the page map.
 
 ## Verification recorded on 28 September
 
