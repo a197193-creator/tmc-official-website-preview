@@ -21,6 +21,6 @@ The images under `assets/` came from the supplied Stitch package. They are label
 
 ## Review before official publication
 
-The [content audit](docs/CONTENT-AUDIT.md) records claims and functions that still need TMC/UKM verification. Confirm the page map, bilingual copy, image rights, logo, content ownership, accessibility, WordPress transfer, and UKM staging access. Any participant, results, booking, or staff workflow needs separate approved service integration and privacy/security review.
+The [MC03 officer review pack](docs/MC03-REVIEW-PACK.md) links the live preview and records verification and open decisions. The [proposed page map](docs/OFFICIAL-PAGE-MAP.md) maps current UKM sections to preview coverage and later implementation. The [content audit](docs/CONTENT-AUDIT.md) records claims and functions that still need TMC/UKM verification. Confirm the page map, bilingual copy, image rights, logo, content ownership, accessibility, WordPress transfer, and UKM staging access. Any participant, results, booking, or staff workflow needs separate approved service integration and privacy/security review.
 
 Reference pages: [UKM introduction](https://www.ukm.my/mycohort/ms/pengenalan/), [biobank](https://www.ukm.my/mycohort/ms/biospesimenbiobank/), [research](https://www.ukm.my/mycohort/ms/penyelidikan-kami/).
