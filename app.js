@@ -1,4 +1,24 @@
 (() => {
+  const portalToggle = document.querySelector('.portal-nav-toggle');
+  const portalNav = document.querySelector('.portal-nav');
+  if (portalToggle && portalNav) {
+    const closePortalNav = () => {
+      portalToggle.setAttribute('aria-expanded', 'false');
+      portalNav.classList.remove('is-open');
+    };
+    portalToggle.addEventListener('click', () => {
+      const open = portalToggle.getAttribute('aria-expanded') !== 'true';
+      portalToggle.setAttribute('aria-expanded', String(open));
+      portalNav.classList.toggle('is-open', open);
+    });
+    portalNav.addEventListener('click', (event) => {
+      if (event.target.closest('a')) closePortalNav();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closePortalNav();
+    });
+  }
+
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
   if (toggle && nav) {

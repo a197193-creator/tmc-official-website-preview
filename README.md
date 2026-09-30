@@ -4,10 +4,10 @@ A public-facing, responsive design preview based on the supplied Stitch UI/UX fi
 
 ## Pages and stack
 
-- `index.html`: home, participant pathways, UKM resource search, and contact
+- `index.html`: English home page adapted from the supplied portal HTML, with participant pathways, UKM resource search, and contact
 - `about.html`: cohort story and sourced milestones
 - `research.html`: biobank and research orientation
-- `styles.css` and `app.js`: responsive design, mobile navigation, and resource filtering
+- `portal.css`, `styles.css`, and `app.js`: responsive design, mobile navigation, and resource filtering
 - `api/resources.php`: a read-only JSON resource directory served by PHP
 - `vercel.json`: [Vercel's recommended community PHP runtime](https://vercel.com/docs/functions/runtimes)
 
@@ -17,7 +17,7 @@ All three pages render without a build step. The resource search uses static lin
 
 Open `index.html` for a quick static preview. With PHP installed, run `php -S localhost:8000` from this directory to exercise the API locally. Deploy the root directory with Vercel; the community runtime handles `api/resources.php`.
 
-The images under `assets/` came from the supplied Stitch package. They are labelled as illustrative concepts in the pages and require approval before official use. The supplied staff dashboard mockups are intentionally excluded from the public site.
+The home page uses the TMC logo image supplied by the user in `assets/tmc-logo.png`. The illustrative laboratory images under `assets/` came from the supplied Stitch package. The public preview labels concept imagery and requires TMC/UKM approval before official use. The supplied staff dashboard mockups are excluded from the public site.
 
 ## Review before official publication
 
