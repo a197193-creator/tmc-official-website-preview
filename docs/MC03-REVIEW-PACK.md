@@ -11,7 +11,8 @@
 ## What is ready for review
 
 - **30 September update:** The home page now uses the English portal HTML supplied for the project, and all public pages use the TMC logo image supplied on 30 September. The home page retains verified UKM destinations, a presentation notice, and a working mobile menu. The simulated participant identity lookup in the draft HTML was removed.
-- Three responsive, public HTML pages: Home, About the cohort, and Biobank & research.
+- **2 October update:** [About Us](https://tmc-official-website-preview.vercel.app/about.html) now uses the home page design and includes Organisation Chart, Directory, Directory by Division, Location Map, and Contact Us / Enquiries / Complaints. It uses UKM-published staff information and photographs from the supplied TMC gallery. Search, reset, expanded directory, division filters, map, and mobile navigation were checked at desktop and mobile widths. See [About Us sources](ABOUT-US-SOURCES.md).
+- Three responsive, public HTML pages: Home, About Us, and Biobank & research.
 - CSS and JavaScript for the visual design, mobile navigation, and resource search.
 - A read-only PHP JSON directory at [`/api/resources.php`](https://tmc-official-website-preview.vercel.app/api/resources.php); six links are also present in HTML as a fallback.
 - Concept imagery from the supplied Stitch package, clearly labelled as illustrative. Simulated staff and participant records are excluded.

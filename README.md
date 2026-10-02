@@ -5,9 +5,10 @@ A public-facing, responsive design preview based on the supplied Stitch UI/UX fi
 ## Pages and stack
 
 - `index.html`: English home page adapted from the supplied portal HTML, with participant pathways, UKM resource search, and contact
-- `about.html`: cohort story and sourced milestones
+- `about.html`: organisation chart, searchable staff directory, directory by division, location map, and contact channels, using the home page design
 - `research.html`: biobank and research orientation
-- `portal.css`, `styles.css`, and `app.js`: responsive design, mobile navigation, and resource filtering
+- `portal.css`, `about.css`, `styles.css`, `app.js`, and `about.js`: responsive design, navigation, resource search, and staff filters
+- `data/tmc-directory.json`: sourced snapshot of 37 public staff contacts and published division assignments, checked on 2 October 2026
 - `api/resources.php`: a read-only JSON resource directory served by PHP
 - `vercel.json`: [Vercel's recommended community PHP runtime](https://vercel.com/docs/functions/runtimes)
 
@@ -17,7 +18,7 @@ All three pages render without a build step. The resource search uses static lin
 
 Open `index.html` for a quick static preview. With PHP installed, run `php -S localhost:8000` from this directory to exercise the API locally. Deploy the root directory with Vercel; the community runtime handles `api/resources.php`.
 
-The home page uses the TMC logo image supplied by the user in `assets/tmc-logo.png`. The illustrative laboratory images under `assets/` came from the supplied Stitch package. The public preview labels concept imagery and requires TMC/UKM approval before official use. The supplied staff dashboard mockups are excluded from the public site.
+The home page uses the TMC logo image supplied by the user in `assets/tmc-logo.png`. The About Us page uses photographs from the user's shared TMC image gallery, the UKM-published organisation chart, and public UKM staff portraits. See [About Us sources](docs/ABOUT-US-SOURCES.md) for provenance. The illustrative laboratory images on the home and research pages came from the supplied Stitch package. The public preview labels concept imagery and requires TMC/UKM approval before official use. The supplied staff dashboard mockups are excluded from the public site.
 
 ## Review before official publication
 

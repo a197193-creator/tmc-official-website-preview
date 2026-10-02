@@ -17,4 +17,6 @@ Reviewed 27 September 2026. Source of truth for current public information: [www
 
 ## Release gate
 
+**2 October preview update:** About Us now uses the public UKM organisation chart and directory, published division assignments, and real supplied TMC gallery photographs. It contains 37 public staff contacts and five divisions; it no longer contains the old cohort-size metric. Source details and snapshot dates are recorded in [About Us sources](ABOUT-US-SOURCES.md).
+
 Content owner approval, participant privacy and security review, bilingual copy review, responsive and accessibility testing, live-link testing, and UKM WordPress staging sign-off are required before publication on the official domain.
