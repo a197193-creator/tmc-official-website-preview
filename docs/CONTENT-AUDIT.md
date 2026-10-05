@@ -17,6 +17,8 @@ Reviewed 27 September 2026. Source of truth for current public information: [www
 
 ## Release gate
 
+**5 October Biobank update:** The new page follows the supplied design with UKM content: the published nine-million sample description, three equipment tables (19 entries), 69 real publication records and ten collaboration guidelines. Accreditation is limited to the published bioanalytical laboratory scope. The actual UKM video and contact routes replace draft actions. The source's freezer/tank prose differs from its table; this discrepancy remains for the content owner. See [Biobank sources](BIOBANK-SOURCES.md).
+
 **5 October preview update:** Participants now contains all 11 requested topics, sourced from UKM MyCohort and the documents/forms it publishes. All website photography is from the supplied TMC archive. Staff portraits have been replaced with text initials and the organisation chart with an HTML layout. See [Participants sources](PARTICIPANTS-SOURCES.md) and [image sources](IMAGE-SOURCES.md).
 
 **2 October preview update:** About Us now uses the public UKM organisation chart and directory, published division assignments, and real supplied TMC gallery photographs. It contains 37 public staff contacts and five divisions; it no longer contains the old cohort-size metric. Source details and snapshot dates are recorded in [About Us sources](ABOUT-US-SOURCES.md).

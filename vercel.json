@@ -7,6 +7,12 @@
   },
   "headers": [
     {
+      "source": "/data/tmc-publications-2026-10-05.csv",
+      "headers": [
+        { "key": "Content-Disposition", "value": "attachment; filename=\"TMC-publications-2026-10-05.csv\"" }
+      ]
+    },
+    {
       "source": "/(.*)",
       "headers": [
         { "key": "X-Content-Type-Options", "value": "nosniff" },

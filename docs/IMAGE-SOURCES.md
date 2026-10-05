@@ -8,9 +8,9 @@ All photographs below are from the [main TMC image gallery](https://drive.google
 
 | Local asset | Archive file | Drive file ID | Gallery subfolder | Website use |
 | --- | --- | --- | --- | --- |
-| `assets/tmc-biobank-team.png` | Biobank_Staf | `1owkE3RGVagKM0JpKf9Us1QJqAEpkJqYi` | Gambar Rekrutmen (Video korporat) | Home and About Us hero |
-| `assets/tmc-biobank-tanks.png` | Biobank_Tank | `1dyboPBKff-5mi0W0LPCzqKjWOWTl6ZGy` | Gambar Rekrutmen (Video korporat) | About Us divisions and Research storage |
-| `assets/tmc-biobank-tubes.png` | Biobank_Tube | `16CxBXUqb13MxAAM0hTekwTDC6jybdRy-` | Gambar Rekrutmen (Video korporat) | Research laboratory |
+| `assets/tmc-biobank-team.png` | Biobank_Staf | `1owkE3RGVagKM0JpKf9Us1QJqAEpkJqYi` | Gambar Rekrutmen (Video korporat) | Home, About Us and Biobank hero |
+| `assets/tmc-biobank-tanks.png` | Biobank_Tank | `1dyboPBKff-5mi0W0LPCzqKjWOWTl6ZGy` | Gambar Rekrutmen (Video korporat) | About Us divisions and Biobank video poster |
+| `assets/tmc-biobank-tubes.png` | Biobank_Tube | `16CxBXUqb13MxAAM0hTekwTDC6jybdRy-` | Gambar Rekrutmen (Video korporat) | Biobank collaboration contact |
 | `assets/tmc-reception.jpg` | Ruang menunggu2.jpg | `1jGO0k8kMVTqVwh1k-vNxZWYYdcVrgjBi` | Gambar Pusat Rekrutmen TMC, Aras 6 | About Us visiting information and Participants recruitment centre |
 | `assets/tmc-biophysical.jpg` | Biophosycal | `1PT1Xw1pmFAzXj3XDh5KT8NIXMNKctP7t` | Gambar Rekrutmen (Video korporat) | Participants hero |
 | `assets/tmc-questionnaire.jpg` | Questionaire | `1xy0NgP5UM6xtJQQXUH4a0YW1XSFFGoZ9` | Gambar Rekrutmen (Video korporat) | Participants questionnaire section |

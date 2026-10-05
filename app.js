@@ -1,4 +1,16 @@
 (() => {
+  const portalHeader = document.querySelector('.portal-header');
+  if (portalHeader) {
+    const desktopHeader = window.matchMedia('(min-width: 768px)');
+    const updateAnchorOffset = () => {
+      const offset = desktopHeader.matches ? Math.ceil(portalHeader.getBoundingClientRect().height) + 16 : 16;
+      document.documentElement.style.setProperty('--portal-anchor-offset', `${offset}px`);
+    };
+    updateAnchorOffset();
+    desktopHeader.addEventListener('change', updateAnchorOffset);
+    if ('ResizeObserver' in window) new ResizeObserver(updateAnchorOffset).observe(portalHeader);
+    else window.addEventListener('resize', updateAnchorOffset);
+  }
   const portalToggle = document.querySelector('.portal-nav-toggle');
   const portalNav = document.querySelector('.portal-nav');
   if (portalToggle && portalNav) {
