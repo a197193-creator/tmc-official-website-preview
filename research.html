@@ -11,10 +11,11 @@
 <meta name="description" content="Explore TMC biobank facilities, UKM-published equipment inventories, publications, and collaboration guidelines.">
 <link rel="icon" href="assets/tmc-logo.png" type="image/png">
 <link rel="stylesheet" href="portal.css?v=2">
-<script src="app.js?v=3" defer></script>
+<script src="app.js?v=4" defer></script>
 <link rel="stylesheet" href="biobank.css?v=1">
 <script src="biobank.js?v=1" defer></script>
 <link rel="stylesheet" href="readability.css?v=1">
+<link rel="stylesheet" href="profile.css?v=1">
 </head>
 <body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
 <a class="portal-skip-link" href="#main">Skip to content</a><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.06)] portal-header"><div class="portal-preview-notice">
@@ -95,7 +96,7 @@
 </div>
 </div>
 <p>Basic blood testing described by UKM includes blood glucose, lipid profiles, and kidney profiles.</p></article>
-<article class="bio-card"><h3>
+<article id="accreditation" class="bio-card"><h3>
 <span class="material-symbols-outlined" aria-hidden="true">verified</span> Bioanalytical laboratory accreditation</h3>
 <p>UKM’s published infographic identifies the Level 6 Bioanalytical Laboratory under the Biobank &amp; Bioanalytical Division (SAMM No. 537). It records renewal and upgrade to MS ISO 15189:2022 on 11 June 2025.</p>
 <p>The listed scope covers haematology and chemical pathology, including full blood count, lipid and renal profiles, urine analysis, and HbA1c.</p>
@@ -132,6 +133,18 @@
 </div>
 </div>
 <p class="bio-source">Source: <a class="bio-link" href="https://www.ukm.my/mycohort/ms/biospesimenbiobank/" target="_blank" rel="noopener noreferrer">UKM Biospecimens &amp; Biobank<span class="material-symbols-outlined" aria-hidden="true">open_in_new</span></a></p>
+<div class="profile-content profile-systems">
+  <details id="information-systems" class="profile-details"><summary>Data &amp; information systems<span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="profile-detail-body">
+    <p>UKM's information technology overview describes four systems supporting the collection and management of health data and biospecimens.</p>
+    <dl class="profile-system-list">
+      <div><dt>eCIMS · Cohort information</dt><dd>Manages study information across registration, appointments, measurements, questionnaires, biospecimens, and quality control.</dd></div>
+      <div><dt>TSIMS · Biospecimen tubes</dt><dd>Records tube inventory and storage locations using 2D barcodes.</dd></div>
+      <div><dt>DIMS · Diet information</dt><dd>Records food intake and supports analysis of participants' nutrition information.</dd></div>
+      <div><dt>HeDIMS · Health follow-up</dt><dd>Supports recording disease and treatment information collected during follow-up calls.</dd></div>
+    </dl>
+    <p class="profile-source">Summary of UKM's overview dated 29 January 2020.</p><a class="profile-link" href="https://www.ukm.my/mycohort/ms/sistem-teknologi-maklumat/" target="_blank" rel="noopener noreferrer">Read the UKM information systems overview <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span></a>
+  </div></details>
+</div>
 </div></section>
 
 <section id="equipment-inventories" class="bio-section bio-section-tint"><div class="bio-shell">
@@ -1326,6 +1339,10 @@
 <li class=""><a class="inline-flex items-center gap-space-2xs text-ukm-gold-deep hover:underline mt-space-2xs" href="https://www.ukm.my/mycohort/ms/aduan/" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-sm">campaign</span> Feedback &amp; Complaint Channel</a></li>
 </ul>
 </div>
+</div>
+<div class="portal-footer-extra">
+  <nav class="portal-footer-links" aria-label="More about The Malaysian Cohort"><a href="index.html#about-cohort">About the study</a><a href="about.html#identity-fieldwork">Our identity &amp; fieldwork</a><a href="index.html#faq">Common questions</a></nav>
+  <details id="disclaimer" class="portal-disclaimer"><summary>Website disclaimer<span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div><p>UKM's published notice explains that website functions and availability are not guaranteed, and that users remain responsible for decisions based on its content. Materials are protected by copyright and intellectual property laws.</p><p>This website is a presentation preview. UKM remains the source for official project information.</p><a href="https://www.ukm.my/mycohort/ms/penafian/" target="_blank" rel="noopener noreferrer">Read the full UKM disclaimer ↗</a></div></details>
 </div>
 <div class="mt-space-2xl pt-space-md border-t border-surface-variant/20 flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-code text-label-code text-surface-variant/60">
 <div class="">© 2026 The Malaysian Cohort presentation preview · Not an official UKM deployment.</div>

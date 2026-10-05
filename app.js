@@ -73,7 +73,7 @@
   };
   input.addEventListener('input', filter);
 
-  // The static cards remain available if the PHP function is unavailable offline.
+  // The HTML links remain available if the PHP function is unavailable offline.
   fetch('/api/resources.php', { headers: { Accept: 'application/json' } })
     .then((response) => {
       if (!response.ok) throw new Error('Resource endpoint unavailable');
@@ -82,12 +82,17 @@
     .then((data) => {
       if (!Array.isArray(data.resources) || data.resources.length === 0) return;
       const cards = data.resources.map((item, index) => {
-        if (!item || !/^https:\/\/www\.ukm\.my\/mycohort\//.test(item.url)) return null;
+        if (!item || typeof item.url !== 'string') return null;
+        const internal = /^(?:index|about|participants|research)\.html(?:#[a-z0-9-]+)?$/.test(item.url);
+        const external = /^https:\/\/www\.ukm\.my\/mycohort\//.test(item.url);
+        if (!internal && !external) return null;
         const card = document.createElement('a');
         card.className = 'resource-card';
         card.href = item.url;
-        card.target = '_blank';
-        card.rel = 'noopener noreferrer';
+        if (external) {
+          card.target = '_blank';
+          card.rel = 'noopener noreferrer';
+        }
         card.dataset.search = item.search || '';
         const category = document.createElement('span');
         category.textContent = `${String(index + 1).padStart(2, '0')} / ${item.category}`;
@@ -97,7 +102,7 @@
         description.textContent = item.description;
         const arrow = document.createElement('b');
         arrow.setAttribute('aria-hidden', 'true');
-        arrow.textContent = '↗';
+        arrow.textContent = internal ? '→' : '↗';
         card.append(category, title, description, arrow);
         return card;
       }).filter(Boolean);

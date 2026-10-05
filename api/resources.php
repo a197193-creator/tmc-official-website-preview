@@ -13,12 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
 }
 
 $resources = [
-    ['category' => 'THE COHORT', 'title' => 'Introduction', 'description' => 'Project history and overview', 'search' => 'introduction cohort history overview', 'url' => 'https://www.ukm.my/mycohort/ms/pengenalan/'],
-    ['category' => 'PARTICIPANTS', 'title' => 'Participant information', 'description' => 'Current guidance for participants', 'search' => 'participant screening joining guide', 'url' => 'https://www.ukm.my/mycohort/ms/peserta-tmc/'],
-    ['category' => 'PARTICIPANTS', 'title' => 'Results & feedback', 'description' => 'UKM information and guidance', 'search' => 'results feedback follow up', 'url' => 'https://www.ukm.my/mycohort/ms/keputusan-dan-maklumbalas/'],
-    ['category' => 'BIOBANK', 'title' => 'Biospecimens & Biobank', 'description' => 'Facility and equipment information', 'search' => 'biobank biospecimens laboratory storage', 'url' => 'https://www.ukm.my/mycohort/ms/biospesimenbiobank/'],
-    ['category' => 'RESEARCH', 'title' => 'Research & Publication', 'description' => 'Current UKM research information', 'search' => 'research publication projects', 'url' => 'https://www.ukm.my/mycohort/ms/penyelidikan-kami/'],
-    ['category' => 'CONTACT', 'title' => 'Contact & enquiries', 'description' => 'Official UKM contact channel', 'search' => 'contact enquiry feedback location', 'url' => 'https://www.ukm.my/mycohort/ms/aduan/'],
+    ['category' => 'THE COHORT', 'title' => 'About the study', 'description' => 'Introduction and research objectives', 'search' => 'introduction cohort history overview objectives purpose', 'url' => 'index.html#about-cohort'],
+    ['category' => 'PARTICIPANTS', 'title' => 'Participant guidance', 'description' => 'Screening, results and contact updates', 'search' => 'participant screening results feedback contact update guide', 'url' => 'participants.html'],
+    ['category' => 'BIOBANK', 'title' => 'Biobank facilities', 'description' => 'Biospecimens, laboratory and accreditation', 'search' => 'biobank biospecimens laboratory storage accreditation equipment information systems', 'url' => 'research.html#biospecimens-biobank'],
+    ['category' => 'RESEARCH', 'title' => 'Research & publications', 'description' => 'Publication register and collaboration', 'search' => 'research publication projects collaboration', 'url' => 'research.html#research-publications'],
+    ['category' => 'ABOUT US', 'title' => 'People & organisation', 'description' => 'Team directory, divisions and location', 'search' => 'people team staff directory organisation contact location logo identity vehicles fieldwork', 'url' => 'about.html#directory'],
+    ['category' => 'QUESTIONS', 'title' => 'Common questions', 'description' => 'Quick answers and relevant guidance', 'search' => 'questions faq help enquiries answers', 'url' => 'index.html#faq'],
 ];
 
 echo json_encode(
