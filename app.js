@@ -74,7 +74,7 @@
   input.addEventListener('input', filter);
 
   // The HTML links remain available if the PHP function is unavailable offline.
-  fetch('/api/resources.php', { headers: { Accept: 'application/json' } })
+  fetch('/api/resources.php?v=2', { headers: { Accept: 'application/json' } })
     .then((response) => {
       if (!response.ok) throw new Error('Resource endpoint unavailable');
       return response.json();
