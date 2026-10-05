@@ -2,7 +2,7 @@
 
 Prepared 28 September 2026 for MC02/MC03 review. This is a working proposal based on the supplied Stitch package and a live review of the [current UKM MyCohort site](https://www.ukm.my/mycohort/ms/) on 28 September. That site is the existing website being enhanced. This is **not an approved UKM page map**. A TMC content owner should confirm ownership, language, and disposition of each section before implementation.
 
-Updated 2 October 2026 to reflect the new About Us page.
+Updated 5 October 2026 to reflect the About Us and Participants pages and the archive-only photography.
 
 | Current UKM area | Proposed destination or treatment | Current preview coverage | Decision for TMC officers |
 | --- | --- | --- | --- |
@@ -10,7 +10,7 @@ Updated 2 October 2026 to reflect the new About Us page.
 | Home news and quick links | News / updates area and links to current screening, wellness, location, video, research, and contact pages | Preview links to research and contact but has no news feed or screening / wellness / video section | Decide which items should be visible on the new home page, how news is updated, and which services remain on UKM pages. |
 | Profile: introduction, logo, objectives, achievements, FAQ, disclaimer | Separate profile information with any legally required disclaimer kept visible | Home provides introductory information and links to UKM; `about.html` now covers team, structure, location, and contact | Confirm which subpages stay distinct, approved logo use, FAQ ownership, and disclaimer text. |
 | Profile: laboratory accreditation, biospecimens, IT system, vehicles | Biobank / research and supporting facility pages | `research.html` provides an overview; UKM pages supply detail | Validate technical claims and decide which detailed pages to retain or rewrite. |
-| Participants: recruitment, screening guide, leaflet, measurements, food questionnaire, biospecimen, colorectal screening, results, contact update, enquiries, locations | Participant hub with separate approved guidance and service links | Home links to current UKM participant and results pages | Confirm each service owner, current form/location URL, consent language, and any data handling. No MyKad lookup is in this preview. |
+| Participants: recruitment, screening guide, leaflet, measurements, food questionnaire, biospecimen, colorectal screening, results, contact update, enquiries, locations | Participant hub with UKM guidance and service links | `participants.html` covers all 11 topics, links the 2026 handbook and UKM-published forms, and uses supplied TMC archive photos | Review the English summaries and source links. Forms remain on their published destinations. No MyKad lookup is in this preview. See [Participants sources](PARTICIPANTS-SOURCES.md). |
 | Biobank | Biobank overview plus detailed facility and sample information | `research.html` and current UKM biobank link | Confirm sample figures, equipment inventory, accreditation wording, and imagery. |
 | Research & Publication | Research overview, projects and verified publication list | `research.html` and current UKM research link | Confirm publication records, DOI links, contact route, and update owner. |
 | Gallery: photos, news/archive, video, downloads, health information | Resource/news and media sections after content inventory | No local gallery; selected UKM resource links on home | Decide what to migrate, archive, or redirect; verify media rights and file freshness. |
@@ -19,11 +19,11 @@ Updated 2 October 2026 to reflect the new About Us page.
 
 ## Current preview navigation
 
-Home → About Us → Participant Guide (UKM) → Biobank & Research → News & Updates (home section) → Contact Us.
+Home → About Us → Participants → Biobank & Research → News & Updates (home section) → Contact Us.
 
 ## Live homepage details to preserve or decide
 
-The existing homepage shows a latest-news list, prominent service links (including follow-up screening and wellness packages), contact/location shortcuts, a map, phone and WhatsApp numbers, and opening hours. The three-page preview changes the first impression toward participant and research entry points. Officers should decide the prominence and ownership of those existing elements rather than losing them during redesign.
+The existing homepage shows a latest-news list, prominent service links (including follow-up screening and wellness packages), contact/location shortcuts, a map, phone and WhatsApp numbers, and opening hours. The four-page preview provides participant and research entry points. Officers should decide the prominence and ownership of those existing elements during review.
 
 ## Source and disposition rules
 

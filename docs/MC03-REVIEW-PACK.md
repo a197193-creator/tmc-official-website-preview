@@ -12,10 +12,11 @@
 
 - **30 September update:** The home page now uses the English portal HTML supplied for the project, and all public pages use the TMC logo image supplied on 30 September. The home page retains verified UKM destinations, a presentation notice, and a working mobile menu. The simulated participant identity lookup in the draft HTML was removed.
 - **2 October update:** [About Us](https://tmc-official-website-preview.vercel.app/about.html) now uses the home page design and includes Organisation Chart, Directory, Directory by Division, Location Map, and Contact Us / Enquiries / Complaints. It uses UKM-published staff information and photographs from the supplied TMC gallery. Search, reset, expanded directory, division filters, map, and mobile navigation were checked at desktop and mobile widths. See [About Us sources](ABOUT-US-SOURCES.md).
-- Three responsive, public HTML pages: Home, About Us, and Biobank & research.
+- **5 October update:** [Participants](https://tmc-official-website-preview.vercel.app/participants.html) now includes all 11 requested topics, using UKM information, its 2026 handbook, and its published contact-update and enquiry forms. The home header has one Participants entry. All website photographs now come from the supplied TMC gallery; staff cards use initials and the organisation chart uses HTML. See [Participants sources](PARTICIPANTS-SOURCES.md) and [image sources](IMAGE-SOURCES.md).
+- Four responsive, public HTML pages: Home, About Us, Participants, and Biobank & research.
 - CSS and JavaScript for the visual design, mobile navigation, and resource search.
 - A read-only PHP JSON directory at [`/api/resources.php`](https://tmc-official-website-preview.vercel.app/api/resources.php); six links are also present in HTML as a fallback.
-- Concept imagery from the supplied Stitch package, clearly labelled as illustrative. Simulated staff and participant records are excluded.
+- Photographs from the supplied TMC archive and the logo supplied directly by the user. Simulated staff and participant records are excluded.
 - A proposed mapping from the current UKM navigation to preview and future pages.
 - A live-site baseline review of the existing [UKM MyCohort homepage](https://www.ukm.my/mycohort/ms/), including its news, participant, screening, gallery, contact, and staff-only areas; gaps are recorded in the page map.
 
@@ -30,8 +31,16 @@
 
 ## Officer decisions needed to finish MC03
 
+### Verification recorded on 5 October
+
+- Participants: all 11 sections and topic links present; local files and section anchors resolve.
+- Browser checks at 1280 × 900 and 390 × 844: no horizontal overflow or broken images; desktop section links, mobile topic expansion/collapse, and home mobile navigation work.
+- About Us: 37 text-initial staff cards; searching for Arman returns the expected public staff contact.
+- The 2026 handbook PDF, contact-update form, enquiry form, and published recruitment list returned HTTP 200.
+- Photography check: every site image is either a supplied TMC archive photograph or the directly supplied TMC logo.
+
 1. Agree or revise the proposed public navigation and indicate which existing UKM sections must remain separate pages.
-2. Approve the visual direction, including official branding, logo, typography, and which concept images may be used.
+2. Approve the visual direction, including official branding, logo, typography, and the selected archive photographs.
 3. Nominate content owners for participant guidance, biobank data, publications, personnel, contact details, English and Malay copy, and disclaimers.
 4. Identify the UKM WordPress administrator and staging workflow for the later implementation phase.
 

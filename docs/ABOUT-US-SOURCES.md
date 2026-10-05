@@ -1,6 +1,6 @@
 # About Us content and image sources
 
-Reviewed on **2 October 2026**. Public page: [About Us](https://tmc-official-website-preview.vercel.app/about.html).
+Information reviewed on **2 October 2026**; image policy updated **5 October 2026**. Public page: [About Us](https://tmc-official-website-preview.vercel.app/about.html).
 
 The page shares the home page header, navigation, footer, logo, fonts, and colour palette. Its five sections follow the menu supplied by the user.
 
@@ -8,13 +8,13 @@ The page shares the home page header, navigation, footer, logo, fonts, and colou
 
 | Section | Source | Use |
 | --- | --- | --- |
-| Organisation Chart | [UKM organisation chart](https://www.ukm.my/mycohort/ms/carta-organisasi/) | The published chart image dated 16 December 2025, with its date visible and a link to the full image |
-| Directory | [UKM staff directory](https://www.ukm.my/mycohort/ms/staff-department/malaysia-cohort/) | 37 names, roles, public contact details, and portraits |
+| Organisation Chart | [UKM organisation chart](https://www.ukm.my/mycohort/ms/carta-organisasi/) | HTML structure based on the published chart dated 16 December 2025, with a link to the official source |
+| Directory | [UKM staff directory](https://www.ukm.my/mycohort/ms/staff-department/malaysia-cohort/) | 37 names, roles, and public contact details, with text initials |
 | Directory by Division | [UKM division directory](https://www.ukm.my/mycohort/ms/direktori-mengikut-bahagian/) | 34 staff assignments from the embedded published spreadsheet: Biobank & Bioanalytical (11), Biostatistics (3), Administration (6), Recruitment (11), Information Technology (3) |
 | Location Map | [UKM location map](https://www.ukm.my/mycohort/ms/peta-lokasi/) and [UKM homepage](https://www.ukm.my/mycohort/ms/) | The official embedded map, UMBI address, and published contact hours |
 | Contact Us / Enquiries / Complaint | [UKM enquiries and complaints](https://www.ukm.my/mycohort/ms/aduan/) and [UKM homepage](https://www.ukm.my/mycohort/ms/) | Phone, toll-free number, WhatsApp, management email, and the real Google Form linked by UKM |
 
-The directory snapshot is saved in `data/tmc-directory.json`, with source URLs, original Malay roles, original division/unit labels, English display text, contact details, and original portrait URLs. Portraits are stored locally in `assets/team/`.
+The directory snapshot is saved in `data/tmc-directory.json`, with source URLs, original Malay roles, original division/unit labels, English display text, and contact details. On 5 October, the UKM portraits were removed to comply with the archive-only photography requirement. Staff cards now show text initials.
 
 Three spelling variants were reconciled between the two published lists:
 
@@ -34,7 +34,7 @@ The user supplied the [main TMC image gallery](https://drive.google.com/drive/fo
 | `assets/tmc-biobank-tanks.png` | Biobank_Tank | Gambar Rekrutmen (Video korporat) | `1dyboPBKff-5mi0W0LPCzqKjWOWTl6ZGy` | Directory by Division |
 | `assets/tmc-reception.jpg` | Ruang menunggu2.jpg | Gambar Pusat Rekrutmen TMC, Aras6 | `1jGO0k8kMVTqVwh1k-vNxZWYYdcVrgjBi` | Visiting information |
 
-The UKM chart asset is `assets/tmc-organisation-chart-2025.png`, downloaded from the image linked by its official page. The page uses real supplied and official images without generated replacements. Images are displayed with responsive CSS crops; the saved original files are unchanged.
+The organisation chart is now rendered as HTML from the UKM-published structure, with a link to the full UKM chart. All About Us photographs are from the supplied TMC gallery. Images are displayed with responsive CSS crops; the saved original files are unchanged. See [image sources](IMAGE-SOURCES.md).
 
 ## Behaviour
 
