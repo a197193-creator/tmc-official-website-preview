@@ -1,4 +1,18 @@
 (() => {
+  // Preserve earlier shared links after moving these sections to dedicated pages.
+  const oldPage = location.pathname.split('/').pop() || 'index.html';
+  const oldRoutes = {
+    'index.html#news': 'news.html',
+    'index.html#recognition': 'news.html?search=BMCC',
+    'index.html#contact': 'contact.html',
+    'about.html#contact-us': 'contact.html',
+    'about.html#location-map': 'contact.html'
+  };
+  const destination = oldRoutes[oldPage + location.hash];
+  if (destination) {
+    location.replace(destination);
+    return;
+  }
   const portalHeader = document.querySelector('.portal-header');
   if (portalHeader) {
     const desktopHeader = window.matchMedia('(min-width: 768px)');
@@ -74,7 +88,7 @@
   input.addEventListener('input', filter);
 
   // The HTML links remain available if the PHP function is unavailable offline.
-  fetch('/api/resources.php?v=2', { headers: { Accept: 'application/json' } })
+  fetch('/api/resources.php?v=3', { headers: { Accept: 'application/json' } })
     .then((response) => {
       if (!response.ok) throw new Error('Resource endpoint unavailable');
       return response.json();
@@ -83,7 +97,7 @@
       if (!Array.isArray(data.resources) || data.resources.length === 0) return;
       const cards = data.resources.map((item, index) => {
         if (!item || typeof item.url !== 'string') return null;
-        const internal = /^(?:index|about|participants|research)\.html(?:#[a-z0-9-]+)?$/.test(item.url);
+        const internal = /^(?:index|about|participants|research|news|contact|resources)\.html(?:#[a-z0-9-]+)?$/.test(item.url);
         const external = /^https:\/\/www\.ukm\.my\/mycohort\//.test(item.url);
         if (!internal && !external) return null;
         const card = document.createElement('a');

@@ -19,6 +19,9 @@ $resources = [
     ['category' => 'RESEARCH', 'title' => 'Research & publications', 'description' => 'Publication register and collaboration', 'search' => 'research publication projects collaboration', 'url' => 'research.html#research-publications'],
     ['category' => 'ABOUT US', 'title' => 'People & organisation', 'description' => 'Team directory, divisions and location', 'search' => 'people team staff directory organisation contact location logo identity vehicles fieldwork', 'url' => 'about.html#directory'],
     ['category' => 'QUESTIONS', 'title' => 'Common questions', 'description' => 'Quick answers and relevant guidance', 'search' => 'questions faq help enquiries answers', 'url' => 'index.html#faq'],
+    ['category' => 'NEWS', 'title' => 'News & updates', 'description' => 'Published reports and earlier project archive', 'search' => 'news archive updates announcement careers awards', 'url' => 'news.html'],
+    ['category' => 'CONTACT', 'title' => 'Contact Us', 'description' => 'Contact channels, enquiries and visiting information', 'search' => 'contact location map hours phone whatsapp email enquiries complaints', 'url' => 'contact.html'],
+    ['category' => 'RESOURCES', 'title' => 'Resources & media', 'description' => 'Albums, video, documents and health reading', 'search' => 'resources media gallery photos video downloads health information newspaper', 'url' => 'resources.html'],
 ];
 
 echo json_encode(

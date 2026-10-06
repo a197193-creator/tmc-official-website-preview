@@ -33,3 +33,5 @@ Home search now finds six grouped website sections. The PHP resource directory a
 ## Verification
 
 All local destinations and fragments resolve, with no duplicate IDs. The four objectives, four FAQ entries, four vehicle types, four information systems, and shared footer notice were checked. Native disclosures operate without JavaScript; the FAQ keyboard control and screening-guide link were exercised. Desktop and mobile layouts and Home search were reviewed before deployment.
+
+6 October update: recognition reports are now on the dedicated News & Updates page.

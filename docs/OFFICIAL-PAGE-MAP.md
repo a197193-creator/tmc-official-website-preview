@@ -19,7 +19,7 @@ Updated 5 October 2026 to reflect About Us, Participants, the full Biobank & Res
 
 ## Current preview navigation
 
-Home → About Us → Participants → Biobank & Research → News & Updates (home section) → Contact Us.
+Home → About Us → Participants → Biobank & Research → News & Updates → Resources → Contact Us.
 
 ## Live homepage details to preserve or decide
 
@@ -33,3 +33,7 @@ The existing homepage shows a latest-news list, prominent service links (includi
 - **Verify:** the full live menu, redirects, and content owners with the UKM site administrator before transferring pages. A live navigation review confirms the major sections above; it does not establish that every linked document, service, or contact detail is current.
 
 The six live UKM destinations used in the preview are listed and checked in [MC03 review pack](MC03-REVIEW-PACK.md). Claim-level discrepancies are recorded in [content audit](CONTENT-AUDIT.md).
+
+## 6 October 2026 public coverage update
+
+News, Contact Us, and Resources are now separate pages. All accessible public menu topics are represented. The archive includes 249 news/earlier posts, 245 unique album URLs, 23 newspaper clippings, 10 video links, six health articles, and available documents. Home has three recent stories and a Contact page link; About Us retains organisation, directory, divisions, identity and fieldwork. See [source inventory and access limits](NEWS-RESOURCES-SOURCES.md). Officer review, UAT, and official release remain pending.

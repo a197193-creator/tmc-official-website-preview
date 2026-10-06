@@ -51,3 +51,10 @@
 4. Identify the UKM WordPress administrator and staging workflow for the later implementation phase.
 
 MC04 officer review is scheduled for 5–9 October. The public Vercel link is suitable for presenting the design now; it is not the official UKM release or an operational participant/staff service. See the [content audit](CONTENT-AUDIT.md) for claims and workflows needing validation.
+
+## 6 October 2026 update
+
+- All accessible public menu topics are represented across seven pages.
+- Dedicated [News](https://tmc-official-website-preview.vercel.app/news.html), [Resources](https://tmc-official-website-preview.vercel.app/resources.html), and [Contact](https://tmc-official-website-preview.vercel.app/contact.html) pages use current UKM source snapshots.
+- Public preview development and content integration are complete. Officer review, UAT/final improvements, and official release remain pending.
+- See [source inventory and limitations](NEWS-RESOURCES-SOURCES.md); original full reports and media remain linked to their source.
