@@ -27,7 +27,7 @@ All seven pages render without a build step. Website section search uses the sam
 
 Open `index.html` for a quick static preview. With PHP installed, run `php -S localhost:8000` from this directory to exercise the API locally. Deploy the root directory with Vercel; the community runtime handles `api/resources.php`.
 
-The site retains the TMC logo supplied directly by the user in `assets/tmc-logo.png`. All website photographs now come from the user's supplied TMC image gallery; the Stitch concept images and UKM staff portraits have been removed. Staff cards use text initials, and the organisation chart is an HTML layout based on the UKM chart. See [image sources](docs/IMAGE-SOURCES.md), [About Us sources](docs/ABOUT-US-SOURCES.md), [Participants sources](docs/PARTICIPANTS-SOURCES.md), and [Biobank sources](docs/BIOBANK-SOURCES.md). The supplied staff dashboard mockups are excluded from the public site.
+The site retains the TMC logo supplied directly by the user in `assets/tmc-logo.png`. All website photographs come from the user's supplied TMC image gallery; the Stitch concept images and UKM staff portraits have been removed. Staff cards use text initials. At the user's request, About Us embeds the original UKM organisation chart effective 1 October 2026, with a full-size view. See [image sources](docs/IMAGE-SOURCES.md), [About Us sources](docs/ABOUT-US-SOURCES.md), [Participants sources](docs/PARTICIPANTS-SOURCES.md), and [Biobank sources](docs/BIOBANK-SOURCES.md). The supplied staff dashboard mockups are excluded from the public site.
 
 ## Review before official publication
 

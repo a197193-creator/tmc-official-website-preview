@@ -1,6 +1,6 @@
 # Website image sources
 
-Updated **5 October 2026** following the user's requirement to use the supplied TMC image archives for all website photography.
+Updated **6 October 2026**. Website photography uses the supplied TMC image archives; the official organisation chart is embedded from UKM at the user's explicit request.
 
 ## Archive photographs
 
@@ -20,6 +20,10 @@ The existing TMC logo was supplied directly by the user and remains the brand as
 
 ## Removed images
 
-The three Stitch concept images, the 37 portraits previously fetched from UKM, and the chart image previously fetched from UKM are removed from the deployable files. Staff contacts are retained with text initials, and the organisation structure is rendered as HTML. The full original chart remains available through a source link to UKM.
+The three Stitch concept images and the 37 staff portraits previously fetched from UKM are removed from the deployable files. Staff contacts use text initials.
+
+## Official organisation chart
+
+The user requested the real UKM chart on 6 October 2026. `assets/tmc-organisation-chart-2026-10-01.png` is the unchanged 2560 × 1810 PNG published on the [UKM organisation page](https://www.ukm.my/mycohort/ms/carta-organisasi/), effective 1 October 2026. [Original image](https://www.ukm.my/mycohort/wp-content/uploads/2026/10/CARTA-ORGANISASI-TMC_kuatkuasa-01.10.2026-1-scaled.png). It appears in About Us and opens at full size.
 
 The map embeds originate from the UKM-published map. The participant handbook and forms are external UKM-published resources rather than locally embedded photographs.

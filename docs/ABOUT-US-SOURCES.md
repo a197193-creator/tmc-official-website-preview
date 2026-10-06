@@ -8,7 +8,7 @@ The page shares the home page header, navigation, footer, logo, fonts, and colou
 
 | Section | Source | Use |
 | --- | --- | --- |
-| Organisation Chart | [UKM organisation chart](https://www.ukm.my/mycohort/ms/carta-organisasi/) | HTML structure based on the published chart dated 16 December 2025, with a link to the official source |
+| Organisation Chart | [UKM organisation chart](https://www.ukm.my/mycohort/ms/carta-organisasi/) | Original published image, effective 1 October 2026, embedded with a full-size view and source link; checked 6 October 2026 |
 | Directory | [UKM staff directory](https://www.ukm.my/mycohort/ms/staff-department/malaysia-cohort/) | 37 names, roles, and public contact details, with text initials |
 | Directory by Division | [UKM division directory](https://www.ukm.my/mycohort/ms/direktori-mengikut-bahagian/) | 34 staff assignments from the embedded published spreadsheet: Biobank & Bioanalytical (11), Biostatistics (3), Administration (6), Recruitment (11), Information Technology (3) |
 | Location Map | [UKM location map](https://www.ukm.my/mycohort/ms/peta-lokasi/) and [UKM homepage](https://www.ukm.my/mycohort/ms/) | The official embedded map, UMBI address, and published contact hours |
@@ -34,7 +34,7 @@ The user supplied the [main TMC image gallery](https://drive.google.com/drive/fo
 | `assets/tmc-biobank-tanks.png` | Biobank_Tank | Gambar Rekrutmen (Video korporat) | `1dyboPBKff-5mi0W0LPCzqKjWOWTl6ZGy` | Directory by Division |
 | `assets/tmc-reception.jpg` | Ruang menunggu2.jpg | Gambar Pusat Rekrutmen TMC, Aras6 | `1jGO0k8kMVTqVwh1k-vNxZWYYdcVrgjBi` | Visiting information |
 
-The organisation chart is now rendered as HTML from the UKM-published structure, with a link to the full UKM chart. All About Us photographs are from the supplied TMC gallery. Images are displayed with responsive CSS crops; the saved original files are unchanged. See [image sources](IMAGE-SOURCES.md).
+At the user's request on 6 October, the organisation section now embeds the original [UKM chart image](https://www.ukm.my/mycohort/wp-content/uploads/2026/10/CARTA-ORGANISASI-TMC_kuatkuasa-01.10.2026-1-scaled.png), effective 1 October 2026. The saved 2560 × 1810 PNG is unchanged and opens at full size. All About Us photographs are from the supplied TMC gallery. See [image sources](IMAGE-SOURCES.md).
 
 ## Behaviour
 

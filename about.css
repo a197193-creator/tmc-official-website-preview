@@ -40,8 +40,10 @@
 .about-text-action { display: inline-flex; align-items: center; gap: 6px; color: var(--about-blue); font: 700 13px/1.5 Inter, sans-serif; cursor: pointer; }
 .about-text-action:hover { text-decoration: underline; text-underline-offset: 3px; }
 .about-text-action .material-symbols-outlined { font-size: 19px; }
-.about-chart-image { display: block; padding: 20px; }
-.about-chart-image img { display: block; width: 100%; max-width: 1000px; height: auto; margin: 0 auto; }
+.about-chart-image { display: block; margin: 0; padding: 20px; }
+.about-chart-image a { display: block; cursor: zoom-in; }
+.about-chart-image img { display: block; width: 100%; height: auto; margin: 0 auto; }
+.about-chart-image figcaption { margin-top: 14px; color: var(--about-muted); font-size: 13px; line-height: 1.6; text-align: center; }
 .about-source { margin: 18px 0 0; color: #5a6171; font-size: 12px; line-height: 1.7; }
 .about-source a { color: var(--about-blue); text-decoration: underline; text-underline-offset: 2px; }
 .directory-toolbar { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) auto; gap: 16px; align-items: end; padding: 20px; border: 1px solid var(--about-border); border-radius: 8px; background: white; }
@@ -59,26 +61,6 @@
 .staff-card-heading img { flex: 0 0 72px; width: 72px; height: 86px; border-radius: 5px; object-fit: cover; object-position: center top; background: #eff4ff; }
 .staff-card-heading > div { min-width: 0; }
 .staff-initials { display: flex; align-items: center; justify-content: center; flex: 0 0 72px; width: 72px; height: 86px; border: 1px solid #d5e3fd; border-radius: 5px; background: #eff4ff; color: #002b7f; font: 800 26px/1.2 Manrope, sans-serif; }
-.organisation-flow { padding: 28px; text-align: center; }
-.organisation-flow span, .organisation-flow strong { display: block; }
-.organisation-flow span { font-size: 12px; font-weight: 700; line-height: 1.6; }
-.organisation-flow strong { margin-top: 9px; font: 800 15px/1.5 Manrope, sans-serif; }
-.organisation-leader, .organisation-manager { max-width: 400px; margin: 0 auto; border: 1px solid #d5e3fd; border-radius: 7px; padding: 18px; background: #001851; color: white; }
-.organisation-leader > span { color: #ffdea6; }
-.organisation-deputies { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 750px; margin: 28px auto; }
-.organisation-deputies::before { content: ''; position: absolute; top: -28px; left: 50%; width: 1px; height: 28px; background: #aebedb; }
-.organisation-deputies > div { border: 1px solid #d5e3fd; border-radius: 7px; padding: 18px; background: #eff4ff; }
-.organisation-manager { background: #fff8e6; border-color: #e9d397; color: #001851; }
-.organisation-divisions { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; position: relative; margin-top: 28px; text-align: left; }
-.organisation-divisions::before { content: ''; position: absolute; top: -28px; left: 50%; width: 1px; height: 28px; background: #aebedb; }
-.organisation-divisions > div { padding: 18px 14px; border: 1px solid #d5e3fd; border-radius: 7px; background: #f8f9ff; }
-.organisation-divisions span { color: #b80a2e; min-height: 36px; }
-.organisation-divisions strong { font-size: 13px; }
-.organisation-divisions small { display: block; margin-top: 14px; padding-top: 12px; border-top: 1px solid #d5e3fd; color: #444651; font-size: 11px; line-height: 1.9; }
-.organisation-flow > p { margin: 22px 0 0; color: #5a6171; font-size: 12px; line-height: 1.8; text-align: left; }
-@media (max-width: 1000px) { .organisation-divisions { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-@media (max-width: 767px) { .organisation-flow { padding: 20px; } .organisation-deputies { grid-template-columns: 1fr; gap: 14px; } .organisation-divisions { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 520px) { .organisation-divisions { grid-template-columns: 1fr; } .organisation-divisions span { min-height: 0; } }
 .staff-division { display: block; margin-bottom: 5px; color: var(--about-red); font-size: 11px; font-weight: 700; line-height: 1.45; }
 .staff-card h3 { margin: 0; font-size: 15px; font-weight: 800; line-height: 1.5; }
 .staff-role { margin: 16px 0 10px; color: var(--about-muted); font-size: 13px; line-height: 1.7; }
