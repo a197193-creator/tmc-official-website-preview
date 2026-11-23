@@ -4,7 +4,7 @@ Updated **5 October 2026** following the user's request to place key Profile inf
 
 | Old Profile topic | New location | UKM source |
 | --- | --- | --- |
-| Introduction | Home hero and `#about-cohort` | [Introduction](https://www.ukm.my/mycohort/ms/pengenalan/) |
+| Introduction | Home study summary links to `introduction.html`, with the complete bilingual overview, film and 13 posters | [Introduction](https://www.ukm.my/mycohort/ms/pengenalan/) |
 | Objectives | Four concise aims on Home, `#objectives` | [Objectives](https://www.ukm.my/mycohort/ms/objektif/) |
 | Logo | About Us, `#tmc-logo`, within Identity & Fieldwork | [Logo explanation](https://www.ukm.my/mycohort/ms/logo/) |
 | Research & Publication | Biobank & Research, `#research-publications` | [Research](https://www.ukm.my/mycohort/ms/penyelidikan-kami/) |

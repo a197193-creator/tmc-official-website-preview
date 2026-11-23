@@ -5,6 +5,7 @@ A public-facing, responsive design preview based on the supplied Stitch UI/UX fi
 ## Pages and stack
 
 - `index.html`: English home page adapted from the supplied portal HTML, with study introduction, objectives, participant pathways, news/recognition, website section search, common questions, and a short contact entry point
+- `introduction.html`: the complete UKM study overview in English and Malay, original 2010 film, and all 13 infographic entries with full images and 12 distinct PDFs. See [source inventory](docs/introduction-source-inventory.json).
 - `about.html`: organisation chart, searchable staff directory, directory by division, and identity/fieldwork details, using the home page design
 - `participants.html`: all 11 requested participant topics, using the home page design and UKM-published information, handbook, and forms
 - `research.html`: Biobank & Research page adapted from the supplied design: facilities, accreditation, video, expandable information systems, three equipment inventories, publication register, and ten collaboration guidelines
@@ -21,7 +22,7 @@ A public-facing, responsive design preview based on the supplied Stitch UI/UX fi
 - `api/resources.php`: a read-only JSON resource directory served by PHP
 - `vercel.json`: [Vercel's recommended community PHP runtime](https://vercel.com/docs/functions/runtimes)
 
-All seven pages render without a build step. Website section search uses the same local destinations in PHP and its static HTML fallback. The full publication register, CSV link, and expandable information remain available without JavaScript. Participant updates and enquiries open the forms published by UKM. No participant identifiers or health information are collected by this preview.
+All eight pages render without a build step. Website section search uses the same local destinations in PHP and its static HTML fallback. The full publication register, CSV link, and expandable information remain available without JavaScript. Participant updates and enquiries open the forms published by UKM. No participant identifiers or health information are collected by this preview.
 
 ## Run and deploy
 

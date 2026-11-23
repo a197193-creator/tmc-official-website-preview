@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
 }
 
 $resources = [
-    ['category' => 'THE COHORT', 'title' => 'About the study', 'description' => 'Introduction and research objectives', 'search' => 'introduction cohort history overview objectives purpose', 'url' => 'index.html#about-cohort'],
+    ['category' => 'THE COHORT', 'title' => 'Study introduction', 'description' => 'Overview, historical film and infographics', 'search' => 'introduction cohort history overview objectives purpose infographics video bahasa melayu', 'url' => 'introduction.html'],
     ['category' => 'PARTICIPANTS', 'title' => 'Participant guidance', 'description' => 'Screening, results and contact updates', 'search' => 'participant screening results feedback contact update guide', 'url' => 'participants.html'],
     ['category' => 'BIOBANK', 'title' => 'Biobank facilities', 'description' => 'Biospecimens, laboratory and accreditation', 'search' => 'biobank biospecimens laboratory storage accreditation equipment information systems', 'url' => 'research.html#biospecimens-biobank'],
     ['category' => 'RESEARCH', 'title' => 'Research & publications', 'description' => 'Publication register and collaboration', 'search' => 'research publication projects collaboration', 'url' => 'research.html#research-publications'],
