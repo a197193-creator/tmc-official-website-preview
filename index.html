@@ -6,8 +6,8 @@
   <meta name="description" content="The Malaysian Cohort study, participant services, biobank, publications and news.">
   <title>The Malaysian Cohort | UKM presentation preview</title>
   <link rel="icon" href="favicon.svg">
-  <link rel="stylesheet" href="site.css?v=1">
-  <script src="app.js?v=7" defer></script>
+  <link rel="stylesheet" href="site.css?v=2">
+  <script src="app.js?v=8" defer></script>
 </head>
 <body class="editorial-body">
 <a class="tmc-skip" href="#main">Skip to content</a>
@@ -38,10 +38,11 @@
       <a href="news.html">News &amp; Updates</a>
       <a href="resources.html">Resources</a>
       <a href="contact.html">Contact Us</a>
+      <a href="index.html#resource-search" class="tmc-search-link">Search site</a>
     </nav>
   </div>
 </header>
-<main id="main" class="editorial">
+<main id="main" tabindex="-1" class="editorial">
   <section class="editorial-hero">
     <div class="tmc-shell editorial-hero-grid">
       <div>
@@ -105,8 +106,27 @@
   <section id="resources" class="editorial-section section-tint">
     <div class="tmc-shell">
       <div class="editorial-heading"><h2>Find a website section</h2></div>
-      <div class="resource-toolbar"><label for="resource-search">Search this site</label><input id="resource-search" type="search" placeholder="Try infographics, biobank or screening" autocomplete="off"><span id="resource-count" aria-live="polite">9 resources</span></div>
-      <div class="resource-grid" id="resource-grid"><a class="resource-card" data-search="introduction cohort history overview objectives purpose infographics video bahasa melayu" href="introduction.html"><strong>Study introduction</strong><small>Overview, historical film and infographics</small><b aria-hidden="true">→</b></a><a class="resource-card" data-search="participant screening results feedback contact update guide" href="participants.html"><strong>Participant guidance</strong><small>Screening, results and contact updates</small><b aria-hidden="true">→</b></a><a class="resource-card" data-search="biobank biospecimens laboratory storage accreditation equipment information systems" href="research.html#biospecimens-biobank"><strong>Biobank facilities</strong><small>Biospecimens, laboratory and accreditation</small><b aria-hidden="true">→</b></a><a class="resource-card" data-search="research publication projects collaboration" href="research.html#research-publications"><strong>Research &amp; publications</strong><small>Publication register and collaboration</small><b aria-hidden="true">→</b></a><a class="resource-card" data-search="people team staff directory organisation contact location logo identity vehicles fieldwork" href="about.html#directory"><strong>People &amp; organisation</strong><small>Team directory, divisions and location</small><b aria-hidden="true">→</b></a><a class="resource-card" data-search="questions faq help enquiries answers" href="index.html#faq"><strong>Common questions</strong><small>Quick answers and relevant guidance</small><b aria-hidden="true">→</b></a><a class="resource-card" data-search="news archive updates announcement careers awards" href="news.html"><strong>News &amp; updates</strong><small>Published reports and earlier project archive</small><b aria-hidden="true">→</b></a><a class="resource-card" data-search="contact location map hours phone whatsapp email enquiries complaints" href="contact.html"><strong>Contact Us</strong><small>Contact channels, enquiries and visiting information</small><b aria-hidden="true">→</b></a><a class="resource-card" data-search="resources media gallery photos video downloads health information newspaper" href="resources.html"><strong>Resources &amp; media</strong><small>Albums, video, documents and health reading</small><b aria-hidden="true">→</b></a></div>
+      <div class="resource-toolbar" role="search" aria-label="Website sections">
+        <label for="resource-search">Search this site</label>
+        <input id="resource-search" type="search" placeholder="Try contact update, biobank or screening" autocomplete="off" aria-controls="resource-grid">
+        <button id="resource-clear" type="button" hidden>Clear search</button>
+        <span id="resource-count" role="status">13 results</span>
+      </div>
+      <div class="resource-grid" id="resource-grid">
+        <a class="resource-card" data-search="introduction cohort history overview objectives purpose video bahasa melayu" href="introduction.html"><strong>Study introduction</strong><small>Bilingual overview and the 2010 project film</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="infographics posters milestones pdf documents" href="introduction.html#infographics"><strong>Study infographics</strong><small>13 posters with PDF downloads</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="participant recruitment screening guide" href="participants.html"><strong>Participant guidance</strong><small>Recruitment, screening and appointments</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="screening results feedback delivery collection" href="participants.html#results-feedback"><strong>Results and feedback</strong><small>How screening results are delivered</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="participant contact update details address phone form" href="participants.html#contact-update"><strong>Update your contact details</strong><small>Use UKM’s participant update form</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="biobank biospecimens laboratory storage accreditation equipment information systems" href="research.html#biospecimens-biobank"><strong>Biobank facilities</strong><small>Biospecimens, laboratory and accreditation</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="research publication projects collaboration" href="research.html#research-publications"><strong>Research &amp; publications</strong><small>Publication register and collaboration</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="people team staff directory division logo identity vehicles fieldwork" href="about.html#directory"><strong>Staff directory</strong><small>Find people by name or division</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="organisation organization chart governance management team" href="about.html#organisation-chart"><strong>Organisation chart</strong><small>View the chart published by UKM</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="questions faq help enquiries answers" href="index.html#faq"><strong>Common questions</strong><small>Quick answers and relevant guidance</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="news archive updates announcement careers awards" href="news.html"><strong>News &amp; updates</strong><small>Published reports and earlier project archive</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="contact location map hours phone whatsapp email enquiries complaints" href="contact.html"><strong>Contact Us</strong><small>Contact channels, enquiries and visiting information</small><b aria-hidden="true">→</b></a>
+        <a class="resource-card" data-search="resources media gallery photos video downloads health information newspaper" href="resources.html"><strong>Resources &amp; media</strong><small>Albums, video, documents and health reading</small><b aria-hidden="true">→</b></a>
+      </div>
       <p class="resource-empty" id="resource-empty" hidden>No matching resources. Try another term.</p>
     </div>
   </section>

@@ -6,7 +6,7 @@
     'index.html#recognition': 'news.html?search=BMCC',
     'index.html#contact': 'contact.html',
     'about.html#contact-us': 'contact.html',
-    'about.html#location-map': 'contact.html'
+    'about.html#location-map': 'contact.html#location'
   };
   const destination = oldRoutes[oldPage + location.hash];
   if (destination) {
@@ -25,6 +25,7 @@
     mainNav.addEventListener('click', (event) => {
       if (event.target.closest('a')) setMenu(false);
     });
+    window.matchMedia('(max-width: 760px)').addEventListener('change', () => setMenu(false));
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
         setMenu(false);
@@ -40,6 +41,9 @@
     };
     openMalay();
     window.addEventListener('hashchange', openMalay);
+    document.querySelectorAll('a[href="#bahasa-melayu"]').forEach((link) => {
+      link.addEventListener('click', () => { malayIntroduction.open = true; });
+    });
   }
 
   const videoLink = document.querySelector('.intro-video-trigger');
@@ -58,50 +62,40 @@
     });
   }
 
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.site-nav');
-  if (toggle && nav) {
-    const close = () => {
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', 'Open navigation');
-      nav.classList.remove('open');
-    };
-    toggle.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-expanded') !== 'true';
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
-      nav.classList.toggle('open', open);
-    });
-    nav.addEventListener('click', (event) => {
-      if (event.target.closest('a')) close();
-    });
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') close();
-    });
-  }
-
   const grid = document.querySelector('#resource-grid');
   const input = document.querySelector('#resource-search');
   const count = document.querySelector('#resource-count');
   const empty = document.querySelector('#resource-empty');
+  const clear = document.querySelector('#resource-clear');
   if (!grid || !input || !count || !empty) return;
 
+  const normalize = (value) => value.toLocaleLowerCase().normalize('NFD')
+    .replace(/\p{M}/gu, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
   const filter = () => {
-    const query = input.value.trim().toLocaleLowerCase();
-    const cards = [...grid.querySelectorAll('.resource-card')];
+    const query = normalize(input.value).split(' ').filter(Boolean);
     let visible = 0;
-    for (const card of cards) {
-      const match = (card.dataset.search + ' ' + card.textContent).toLocaleLowerCase().includes(query);
+    for (const card of grid.querySelectorAll('.resource-card')) {
+      const content = normalize(`${card.dataset.search || ''} ${card.textContent}`);
+      const match = query.every((word) => content.includes(word));
       card.hidden = !match;
       if (match) visible += 1;
     }
-    count.textContent = `${visible} ${visible === 1 ? 'resource' : 'resources'}`;
+    count.textContent = `${visible} ${visible === 1 ? 'result' : 'results'}`;
     empty.hidden = visible !== 0;
   };
   input.addEventListener('input', filter);
+  if (clear) {
+    clear.hidden = false;
+    clear.addEventListener('click', () => {
+      input.value = '';
+      filter();
+      input.focus();
+    });
+  }
+  filter();
 
   // The HTML links remain available if the PHP function is unavailable offline.
-  fetch('/api/resources.php?v=4', { headers: { Accept: 'application/json' } })
+  fetch('api/resources.php?v=5', { headers: { Accept: 'application/json' } })
     .then((response) => {
       if (!response.ok) throw new Error('Resource endpoint unavailable');
       return response.json();
@@ -131,7 +125,7 @@
         card.append(title, description, arrow);
         return card;
       }).filter(Boolean);
-      if (cards.length > 0) {
+      if (cards.length > 0 && !grid.contains(document.activeElement)) {
         grid.replaceChildren(...cards);
         filter();
       }

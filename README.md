@@ -1,6 +1,6 @@
 # The Malaysian Cohort website presentation preview
 
-A public-facing, responsive design preview based on the supplied Stitch UI/UX files. It is intended for presentation and review, not as an official UKM deployment.
+A responsive presentation preview of The Malaysian Cohort with shared navigation, typography, colors and page spacing across all eight pages.
 
 ## Pages and stack
 
@@ -12,8 +12,8 @@ A public-facing, responsive design preview based on the supplied Stitch UI/UX fi
 - `news.html`: 249 news and earlier project records, with search, filters, pagination, and CSV
 - `contact.html`: direct telephone, WhatsApp, email, public enquiry form, map, and contact hours
 - `resources.html`: 245 album links, 23 newspaper clippings, 10 videos, six health articles, and four downloads/indexes
-- `portal.css`, `about.css`, `participants.css`, `biobank.css`, `readability.css`, `profile.css`, and `updates.css`: responsive design with slightly larger text across all seven pages, grouped Profile content, and the shared footer disclaimer
-- `app.js`, `about.js`, `participants.js`, `biobank.js`, `news.js`, and `resources.js`: navigation, resource search, staff filters, section navigation, and archive search, filters, and pagination
+- `site.css`: shared typography, colors, layout and responsive page navigation. The page stylesheets cover the directory, participant topics, publication records and archives.
+- `app.js`, `about.js`, `participants.js`, `biobank.js`, and `archive.js`: site search with 13 direct destinations, staff directory filters, participant topic navigation, publication filtering and shareable news and resource filters.
 - `data/tmc-directory.json`: sourced snapshot of 37 public staff contacts and published division assignments, checked on 2 October 2026
 - `data/participant-sources.json`: UKM sources for the 11 participant sections and their published document/form links, checked on 5 October 2026
 - `data/biobank-sources.json` and `data/biobank-publications.json`: three published UKM equipment tables (19 entries) and 69 publication records, checked on 5 October 2026
