@@ -60,12 +60,14 @@
 .profile-system-list dt, .bio-publication-data dt { font-weight: 650; }
 .profile-system-list dd, .bio-publication-data dd { margin: 0; color: var(--muted); }
 .bio-inventory-stack { display: grid; gap: 1.5rem; min-width: 0; }
+.bio-inventory-card { min-width: 0; container-type: inline-size; }
 .bio-inventory-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .3rem 1rem; margin-bottom: .65rem; }
 .bio-inventory-heading > span { font-size: .88rem; }
 .bio-inventory-note { border-left: 3px solid var(--accent); padding: .6rem .85rem; margin: .8rem 0 1.4rem; }
 .bio-inventory-note p { margin: 0; max-width: 85ch; }
+.biobank-page .bio-table-hint { display: none; margin: 0 0 .4rem; color: var(--muted); font-size: .8125rem; }
 .bio-table-scroll { overflow-x: auto; max-width: 100%; }
-.bio-equipment-table { width: 100%; border-collapse: collapse; text-align: left; font-size: .9rem; line-height: 1.45; }
+.bio-equipment-table { width: 100%; min-width: 28rem; border-collapse: collapse; text-align: left; font-size: .9rem; line-height: 1.45; }
 .bio-equipment-table th, .bio-equipment-table td { padding: .55rem .6rem; vertical-align: top; border-bottom: 1px solid var(--rule); }
 .bio-equipment-table thead th { background: var(--paper); }
 .bio-equipment-table th[scope="row"] { width: 30%; }
@@ -98,6 +100,9 @@
 .bio-contact-card > a, .bio-contact-location { display: block; margin-top: .5rem; overflow-wrap: anywhere; }
 .bio-contact-actions { display: flex; flex-wrap: wrap; gap: .65rem; align-items: center; }
 
+@container (width < 28rem) {
+  .biobank-page .bio-table-hint { display: block; }
+}
 @media (max-width: 760px) {
   .bio-hero-grid, .bio-facility-grid, .bio-collaboration-grid { grid-template-columns: 1fr; }
   .bio-hero-photo img { max-height: 20rem; object-fit: cover; }

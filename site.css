@@ -44,7 +44,8 @@
 .tmc-footer details { margin-top: 1.5rem; }
 .tmc-footer summary { cursor: pointer; }
 .tmc-footer details p { max-width: 65ch; margin: .5rem 0; }
-.tmc-footer-bottom { border-top: 1px solid #ffffff40; margin-top: 1.35rem; padding-top: .9rem; font-size: .8125rem; }
+.tmc-footer-bottom { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .6rem 1.5rem; border-top: 1px solid #ffffff40; margin-top: 1.35rem; padding-top: .9rem; font-size: .8125rem; }
+.tmc-footer-bottom a { display: inline-block; padding-block: .3rem; }
 
 .editorial-body { margin: 0; background: var(--paper); }
 .editorial { color: var(--ink); font: 400 1rem/1.65 var(--body); }
@@ -114,6 +115,7 @@
 .intro-video-trigger span { position: absolute; left: 1rem; bottom: 1rem; padding: .5rem .75rem; color: #fff; background: var(--ink); font-size: .9rem; font-weight: 650; }
 .intro-video-trigger:hover span { background: var(--accent); }
 .poster-group + .poster-group { margin-top: 2.5rem; }
+.poster-jump { display: flex; flex-wrap: wrap; gap: .55rem 1.5rem; margin: -.45rem 0 1.6rem; color: var(--muted); font-size: .95rem; }
 .poster-group > h3 { padding-bottom: .7rem; border-bottom: 1px solid var(--rule); margin-bottom: 1rem; }
 .poster-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
 .poster-grid figure a { display: block; background: #eae7e0; }

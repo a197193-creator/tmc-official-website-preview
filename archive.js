@@ -15,7 +15,8 @@
   const previous = get('previous');
   const next = get('next');
   const pageSize = 12;
-  const normalize = value => value.toLocaleLowerCase('en').normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+  const normalize = value => value.toLocaleLowerCase('en').normalize('NFKD')
+    .replace(/\p{M}/gu, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
   const cards = [...archive.querySelectorAll('[data-search]')].map(element => ({
     element,
     year: element.dataset.year,
@@ -64,9 +65,9 @@
     const visible = new Set(matches.slice(start, end));
 
     for (const card of cards) card.element.hidden = !visible.has(card);
-    count.textContent = matches.length
-      ? `Showing ${start + 1}–${end} of ${matches.length} ${matches.length === 1 ? item : `${item}s`}`
-      : `No ${item}s found`;
+    if (matches.length === 0) count.textContent = `No ${item}s found`;
+    else if (matches.length === 1) count.textContent = `Showing 1 ${item}`;
+    else count.textContent = `Showing ${start + 1}–${end} of ${matches.length} ${item}s`;
     empty.hidden = matches.length !== 0;
     pagination.hidden = pages === 1;
     previous.disabled = page === 1;

@@ -6,12 +6,12 @@
   <meta name="description" content="The Malaysian Cohort overview in English and Malay, the 2010 project film and the full UKM infographic collection.">
   <title>Introduction | The Malaysian Cohort</title>
   <link rel="icon" href="favicon.svg">
-  <link rel="stylesheet" href="site.css?v=2">
+  <link rel="stylesheet" href="site.css?v=3">
   <script src="app.js?v=8" defer></script>
 </head>
 <body class="editorial-body">
 <a class="tmc-skip" href="#main">Skip to content</a>
-<header class="tmc-header">
+<header class="tmc-header" id="page-top" tabindex="-1">
   <div class="tmc-utility"><div class="tmc-shell">
     <a href="https://www.ukm.my/mycohort/ms/">Presentation preview · Current UKM site ↗</a>
     <nav aria-label="UKM links">
@@ -79,7 +79,12 @@
   <section class="editorial-section section-rule" id="infographics">
     <div class="tmc-shell">
       <div class="editorial-heading"><h2>Infographics</h2></div>
-      <section class="poster-group"><h3>Cohort history and achievements</h3><ul class="poster-grid">
+      <nav class="poster-jump" aria-label="Infographic topics">
+        <a href="#poster-history">Cohort history</a>
+        <a href="#poster-screening">Screening and population studies</a>
+        <a href="#poster-biobank">UMBI and the biobank</a>
+      </nav>
+      <section class="poster-group" id="poster-history"><h3>Cohort history and achievements</h3><ul class="poster-grid">
         <li><article>
           <figure><a href="assets/introduction/Poster-Cohort_Profile-TMC.pdf" aria-label="Open Cohort profile: The Malaysian Cohort (PDF)"><img src="assets/introduction/Poster-TMC_3_finalised-page-001-scaled.webp" alt="" loading="lazy" decoding="async"></a></figure>
           <h4>Cohort profile: The Malaysian Cohort</h4>
@@ -106,7 +111,7 @@
           <div class="poster-links"><a href="assets/introduction/Poster-Key_Achievement2.pdf" aria-label="Key achievements: data resources and community development, PDF">View PDF</a><a href="assets/introduction/HiCOE_02_A1_page-0001-scaled.jpg" aria-label="Key achievements: data resources and community development, full image">Full image</a></div>
         </article></li>
       </ul></section>
-<section class="poster-group"><h3>Screening and population studies</h3><ul class="poster-grid">
+<section class="poster-group" id="poster-screening"><h3>Screening and population studies</h3><ul class="poster-grid">
         <li><article>
           <figure><a href="assets/introduction/Poster-Dengue.pdf" aria-label="Open Dengue seroprevalence in Malaysian adults: urban and rural populations (PDF)"><img src="assets/introduction/TMC04_Dengue_A2_page-0001-scaled.webp" alt="" loading="lazy" decoding="async"></a></figure>
           <h4>Dengue seroprevalence in Malaysian adults: urban and rural populations</h4>
@@ -133,7 +138,7 @@
           <div class="poster-links"><a href="assets/introduction/030321-Poster-TMC_mortility_2.pdf" aria-label="Mortality statistics: comparison across surveys, PDF">View PDF</a><a href="assets/introduction/030321-Poster-TMC_mortility_2-1.png" aria-label="Mortality statistics: comparison across surveys, full image">Full image</a></div>
         </article></li>
       </ul></section>
-<section class="poster-group"><h3>UMBI and the biobank</h3><ul class="poster-grid">
+<section class="poster-group" id="poster-biobank"><h3>UMBI and the biobank</h3><ul class="poster-grid">
         <li><article>
           <figure><a href="assets/introduction/UMBI-Intro-Bunting.pdf" aria-label="Open Introduction to UMBI (PDF)"><img src="assets/introduction/UMBI_Intro_-scaled.webp" alt="" loading="lazy" decoding="async"></a></figure>
           <h4>Introduction to UMBI</h4>
@@ -186,7 +191,7 @@
       <p>UKM's published notice explains that website functions and availability are not guaranteed and that users remain responsible for decisions based on its content. Materials are protected by copyright and intellectual property laws.</p>
       <a href="https://www.ukm.my/mycohort/ms/penafian/">Read the full UKM disclaimer ↗</a>
     </details>
-    <div class="tmc-footer-bottom">© 2026 Universiti Kebangsaan Malaysia · Presentation preview</div>
+    <div class="tmc-footer-bottom"><span>© 2026 Universiti Kebangsaan Malaysia · Presentation preview</span><a href="#page-top">Back to top <span aria-hidden="true">↑</span></a></div>
   </div>
 </footer>
 </body>
